@@ -1,13 +1,15 @@
-<article>
-  <h1 class="f2">Archives</h1>
-  <ul class="list mt1 pl0 ml0">
-    {% for post in site.posts limit: 25 %}
-      <li class="pll">
+<article class="pv4 bt b--black-10">
+  <div class="mw7 center ph3">
+    <h1 class="f4">Archives</h1>
+    <ul class="list mt1 pl0 ml0">
+      {% for post in site.posts limit: 25 %}
+      <li class="pll mb4">
         <a href="{{ post.url }}" title="{{post.title}}" class="link dim black-60">
-          <span class="f5 fw6 db">{{ post.title }}</span>
+          <span class="f5 fw6 db lh-copy">{{ post.title }}</span>
           <date datetime="{{post.date}}" class="f6 db">{{ post.date | date_to_long_string }}</date>
         </a>
       </li>
-    {% endfor %}
-  </ul>
+      {% endfor %}
+    </ul>
+  </div>
 </article>
