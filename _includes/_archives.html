@@ -1,11 +1,11 @@
 <article>
-  <h1 class="h2 ct">Archives</h1>
-  <ul class="large-list ct mt-1">
+  <h1 class="f2">Archives</h1>
+  <ul class="list mt1 pl0 ml0">
     {% for post in site.posts limit: 25 %}
-      <li class="large-list--item">
-        <a href="{{ post.url }}" title="{{post.title}}" class="large-list--link">
-          <date datetime="{{post.date}}" class="meta">{{ post.date | date_to_long_string }}</date>
-          {{ post.title }}
+      <li class="pll">
+        <a href="{{ post.url }}" title="{{post.title}}" class="link dim black-60">
+          <span class="f5 fw6 db">{{ post.title }}</span>
+          <date datetime="{{post.date}}" class="f6 db">{{ post.date | date_to_long_string }}</date>
         </a>
       </li>
     {% endfor %}
