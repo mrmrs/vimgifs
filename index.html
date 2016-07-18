@@ -13,7 +13,7 @@ layout: default
   </article>
   <article class="center mw7 ph3">
     <ul class="list pl0 ml0">
-      {% for post in paginator.posts %}
+      {% for post in paginator.posts -1 %}
       <li class="pl0 mb4">
         <a href="{{ post.url }}" title="{{post.title}}" class="db">
           <date datetime="{{post.date}}" class="meta">
