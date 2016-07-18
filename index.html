@@ -3,9 +3,10 @@ layout: default
 ---
 
 <section>
-  <article>
+  <article class="pb5">
     {% for post in site.posts limit: 1 %}
     {{ post.content }}
+      <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     {% endfor %}
   </article>
   <article class="dn">
