@@ -15,11 +15,11 @@ layout: default
     <ul class="list pl0 ml0">
       {% for post in paginator.posts -1 %}
       <li class="pl0 mb4">
-        <a href="{{ post.url }}" title="{{post.title}}" class="db">
-          <date datetime="{{post.date}}" class="meta">
+        <a href="{{ post.url }}" title="{{post.title}}" class="db link dim blue">
+          <span class="fw6 f4 db">{{ post.title }}</span>
+          <date datetime="{{post.date}}" class="f6db">
           {{ post.date | date_to_long_string }}
           </date>
-          {{ post.title }}
         </a>
       </li>
       {% endfor %}
