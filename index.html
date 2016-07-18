@@ -11,11 +11,11 @@ layout: default
     </div>
     {% endfor %}
   </article>
-  <article class="dn">
-    <ul>
+  <article class="center mw7 ph3">
+    <ul class="list pl0 ml0">
       {% for post in paginator.posts %}
-      <li>
-        <a href="{{ post.url }}" title="{{post.title}}" class="large-list--link">
+      <li class="pl0 mb4">
+        <a href="{{ post.url }}" title="{{post.title}}" class="db">
           <date datetime="{{post.date}}" class="meta">
           {{ post.date | date_to_long_string }}
           </date>
