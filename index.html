@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<section>
+  <article>
+    {% for post in site.posts limit: 1 %}
+    {{ post.content }}
+    {% endfor %}
+  </article>
+  <article>
+    <ul>
+      {% for post in paginator.posts %}
+      <li>
+        <a href="{{ post.url }}" title="{{post.title}}" class="large-list--link">
+          <date datetime="{{post.date}}" class="meta">
+          {{ post.date | date_to_long_string }}
+          </date>
+          {{ post.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="dn"><a href="{{site.url}}/archives/" title="Archives">All Gifs</a></p>
+  </article>
+</section>
