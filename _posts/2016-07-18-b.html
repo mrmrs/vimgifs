@@ -10,19 +10,13 @@ awslink: https://s3-us-west-1.amazonaws.com/vimgifs/bvsb.gif
   <div class="pa3">
     <h2 class="f5">{{page.title}}</h2>
     <code class="lh-copy">
-      :le, :ce, and :ri will left align, center align, and right align text.
-      You can pass a range or selection i.e<br><br>
-      :%le<br>
-      :15,55le<br>
-      :'&lt;,'&gt;le<br>
-      :le
+      b will move the cursor back one word. b will treat - as a word, B will skip it.
+      B will move the cursor back one word, will ignore many special characters that b does not.
     </code>
-
     <section>
       <h3 class="fw6 f5">Further Reading</h3>
-      <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#:ce" class="code db link dim blue">:h :ce</a>
-      <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#:ri" class="code db link dim blue">:h :ri</a>
-      <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#:le" class="code db link dim blue">:h :le</a>
+      <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#b" class="code db link dim blue">:h b</a>
+      <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#B" class="code db link dim blue">:h B</a>
     </section>
   </div>
 </div>
