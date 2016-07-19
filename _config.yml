@@ -5,11 +5,10 @@ url: "http://vimgifs.com"
 paginate: 5
 
 # Style of permalinks
-permalink: pretty
-
+permalink: /:month-month:day-:year/:title.html/
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html
-/:month-month:day-:year/:title.html/
+
 # /blog/:yearr/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
 
 # UnComment once you have pygments installed. Used for code syntax highlighting.
