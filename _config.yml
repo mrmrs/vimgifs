@@ -2,7 +2,7 @@ name: "vimgifs"
 descripiton: "If you can watch gifs you can learn vim"
 author: "mrmrs"
 url: "http://vimgifs.com"
-paginate: 5
+paginate: 25
 
 # Style of permalinks
 permalink: /:month-:day-:year/:title/
