@@ -1,0 +1,28 @@
+---
+title: Bang
+layout: posts
+author: mrmrs
+awslink: https://s3-us-west-1.amazonaws.com/vimgifs/bang.gif
+---
+
+<div class="mw7 center code">
+  <img src="{{page.awslink}}">
+  <div class="pa3">
+    <h2 class="f5">{{page.title}}</h2>
+    <code class="lh-copy">
+      You can call an external process with :! {process}.
+      For example:<br>
+      :!ls<br>
+      :!git st<br><br>
+
+      You can combine this feature with the :r (read in feature) to read
+      in to the file the output of an external process like the unix utility date.<br><br>
+      :r ! date
+    </code>
+
+    <section>
+      <h3 class="fw6 f5">Further Reading</h3>
+      <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#!" class="code db link dim blue">:!</a>
+    </section>
+  </div>
+</div>
