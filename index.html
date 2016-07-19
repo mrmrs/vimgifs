@@ -13,7 +13,7 @@ layout: default
   </article>
   <article class="center mw7 ph3">
     <ul class="list pl0 ml0">
-      {% for post in paginator.posts -1 %}
+      {% for post in paginator.posts offset: 1 limit: 25 %}
       <li class="pl0 mb4">
         <a href="{{ post.url }}" title="{{post.title}}" class="db link dim blue">
           <span class="fw6 f4 db">{{ post.title }}</span>
