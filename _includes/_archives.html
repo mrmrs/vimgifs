@@ -4,7 +4,7 @@
     <ul class="list mt1 pl0 ml0">
       {% for post in site.posts limit: 25 %}
       <li class="pl0 mb4 mr4 dib">
-        <a href="{{ post.url }}" title="{{post.title}}" class="link dim black-60">
+        <a href="{{ post.url }}" title="{{post.title}}" class="link db dim black-60">
           <span class="f5 fw6 db lh-copy">{{ post.title }}</span>
           <date datetime="{{post.date}}" class="f7 db">{{ post.date | date_to_long_string }}</date>
         </a>
