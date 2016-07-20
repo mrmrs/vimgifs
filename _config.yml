@@ -3,6 +3,7 @@ descripiton: "If you can watch gifs you can learn vim"
 author: "mrmrs"
 url: "http://vimgifs.com"
 paginate: 25
+gems: [jekyll-paginate]
 
 # Style of permalinks
 permalink: /:month-:day-:year/:title/
