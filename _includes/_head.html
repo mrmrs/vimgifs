@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <title>
-    {{ site.title }}
-  </title>
-  <meta name="author" content="{{site.author}}">
-  <meta name="description" content="{{site.description}}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
-  <style>
-    img { width: 100%; max-width: 100%; }
-    .f7 { font-size: 12px; }
-  </style>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      {% if page.path contains '_posts' %}
+        {{ page.title }} on {{ site.name }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    </title>
+    <meta name="author" content="{{site.author}}">
+    <meta name="description" content="{{site.description}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
+    <style>
+      img { width: 100%; max-width: 100%; }
+      .f7 { font-size: 12px; }
+    </style>
+  </head>
