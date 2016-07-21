@@ -24,9 +24,9 @@ layout: default
     <ul class="list pl0 ml0">
       {% for gif in gifs limit: 25 offset: 1 %}
       <li class="pl0 mb4">
-        <a href="{{ post.url }}" title="{{post.title}}" class="db link dim blue">
+        <a href="{{ gif.url }}" title="{{ gif.title }}" class="db link dim blue">
           <span class="fw6 f4 db">{{ gif.title }}</span>
-          <date datetime="{{gif.date}}" class="f7 db">
+          <date datetime="{{ gif.date }}" class="f7 db">
           {{ gif.date | date_to_long_string }}
           </date>
         </a>
