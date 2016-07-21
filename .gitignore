@@ -4,3 +4,4 @@ npm-debug.log
 *.swp
 _site
 bundle
+.jekyll-metadata
