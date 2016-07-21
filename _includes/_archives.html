@@ -2,11 +2,11 @@
   <div class="mw7 center ph3">
     <h1 class="f4 mb4 fw4">More Gifs</h1>
     <ul class="list mt1 pl0 ml0">
-      {% for post in site.posts limit: 25 %}
+      {% for gif in site.gifs limit: 25 %}
       <li class="pl0 mb4 mr4 dib">
         <a href="{{ post.url }}" title="{{post.title}}" class="link db dim black-60">
-          <span class="f5 fw6 db lh-copy">{{ post.title }}</span>
-          <date datetime="{{post.date}}" class="f7 db">{{ post.date | date_to_long_string }}</date>
+          <span class="f5 fw6 db lh-copy">{{ gif.title }}</span>
+          <date datetime="{{gif.date}}" class="f7 db">{{ gif.date | date_to_long_string }}</date>
         </a>
       </li>
       {% endfor %}

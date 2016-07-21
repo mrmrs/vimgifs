@@ -2,16 +2,25 @@ name: "vimgifs"
 descripiton: "If you can watch gifs you can learn vim"
 author: "mrmrs"
 url: "http://vimgifs.com"
-paginate: 25
-gems: [jekyll-paginate]
 
-# Style of permalinks
-permalink: /:month-:day-:year/:title/
 # Variable format options for URL styles below
 # pretty                                          => /2009/04/29/slap-chop/index.html
 
 # /blog/:yearr/:month/:day/:title                 => /blog/2009/04/29/slap-chop/index.html
 
 # UnComment once you have pygments installed. Used for code syntax highlighting.
+collections:
+  gifs:
+    output: true
+    permalink: /:path/
 
-exclude: [src]
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: gifs
+    values:
+      layout: "gifs"
+
+
+exclude: [src, bundle]
