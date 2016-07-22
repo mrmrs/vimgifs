@@ -4,16 +4,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>
-      {% if page.path contains '_gifs' %}
-        {{ page.title }} on {{ site.name }}
-      {% else %}
-        {{ site.name }}
-      {% endif %}
+      <% if current_resource.try(:title).nil? %>
+        vimgifs
+      <% else %>
+        <%= current_resource.title %> on vimgifs
+      <% end %>
     </title>
-    <meta name="author" content="{{site.author}}">
-    <meta name="description" content="{{site.description}}">
+    <meta name="author" content="mrmrs">
+    <meta name="description" content="If you can watch gifs you can learn vim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://tachyons.io/css/tachyons.min.css">
+    <link rel="stylesheet" href="//npmcdn.com/tachyons@4.0.4/css/tachyons.min.css">
     <style>
       img { width: 100%; max-width: 100%; }
       .f7 { font-size: 12px; }
@@ -22,6 +22,6 @@
       .carbon-img  { float: left; width: 50%;  box-sizing: border-box; }
       .carbon-text  { float: left; width: 50%; padding-left: 16px; box-sizing: border-box; font-size: 12px; }
 
-  #carbonads a:link { text-decoration: none!important; color: #222!important; }
+      #carbonads a:link { text-decoration: none!important; color: #222!important; }
     </style>
   </head>
