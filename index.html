@@ -22,11 +22,11 @@ layout: default
   <article class="center mw7 ph3 pt4 bt b--black-10">
     <h3 class="f6">Latest Gifs</h3>
     <ul class="list pl0 ml0">
-      {% for gif in gifs limit: 25 offset: 1 %}
+      {% for gif in gifs limit: 50 offset: 1 %}
       <li class="pl0 mb4">
         <a href="{{ gif.url }}" title="{{ gif.title }}" class="db link dim blue">
-          <span class="fw6 f4 db">{{ gif.title }}</span>
-          <date datetime="{{ gif.date }}" class="f7 db">
+          <span class="fw6 f4 db lh-title">{{ gif.title }}</span>
+          <date datetime="{{ gif.date }}" class="f7 db lh-title">
           {{ gif.date | date_to_long_string }}
           </date>
         </a>
