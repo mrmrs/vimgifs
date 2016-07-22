@@ -1,0 +1,26 @@
+---
+title: Reverse Line Order
+author: mrmrs
+date: 2016-07-18
+awslink: https://s3-us-west-1.amazonaws.com/vimgifs/reversed.gif
+---
+
+<code class="lh-copy">
+  Use :g/^/m 0 to move every line in the file to the start of the file (0).
+  In other words this command reverses the entire file.<br><br>
+
+  The next example command uses a range of lines to reverse :5,15g/^/m 0
+  And lastly a visual selection can be reverse sorted as well.<br><br>
+
+  g means global<br>
+  m means move<br>
+  ^ is regex for beginning of line<br>
+</code>
+
+<section class="mt4">
+  <h3 class="fw6 f5">Further Reading</h3>
+  <a href="http://vimdoc.sourceforge.net/htmldoc/repeat.html#:g" class="code db link dim blue">:h :g</a>
+  <a href="http://vimdoc.sourceforge.net/htmldoc/change.html#:m" class="code db link dim blue">:h :m</a>
+  <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#'>" class="code db link dim blue">:h '&gt;</a>
+  <a href="http://vimdoc.sourceforge.net/htmldoc/motion.html#'<" class="code link dim">:h '&lt;</a>
+</section>
