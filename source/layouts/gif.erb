@@ -4,7 +4,11 @@
       <img src="<%= current_page.data.awslink %>">
       <div class="pa3">
         <h2 class="f5"><%= current_page.data.title %></h2>
-        <%= yield %>
+        <code class="lh-copy">
+          <%= yield %>
+        </code>
+
+        <%= partial "partials/further_reading", locals: { links: current_page.data.further_reading } %>
       </div>
     </div>
 
