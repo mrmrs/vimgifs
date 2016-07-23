@@ -6,6 +6,7 @@
 #
 # With no layout
 page '/*.json', layout: false
+page '/*.xml', layout: false
 
 # General configuration
 config[:layout] = 'default'
