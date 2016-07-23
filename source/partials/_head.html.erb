@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <% page_title = current_resource.try(:title).nil? ? "vimgifs" : "#{current_resource.title} on vimgifs " %>
     <title>
-      <% if current_resource.try(:title).nil? %>
-        vimgifs
-      <% else %>
-        <%= current_resource.title %> on vimgifs
-      <% end %>
+      <%= page_title %>
     </title>
     <meta name="author" content="mrmrs">
     <meta name="description" content="If you can watch gifs you can learn vim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@vimgifs">
+    <meta name="twitter:title" content="vimgifs">
+    <meta name="twitter:description" content="<%= page_title %>">
+
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag 'tachyons.min' %>
     <style>
