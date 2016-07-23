@@ -1,0 +1,9 @@
+{
+  "name": "vimgifs",
+  "dependencies": {
+    "http-server": "0.9.0"
+  },
+  "scripts": {
+    "start": "http-server -d"
+  }
+}

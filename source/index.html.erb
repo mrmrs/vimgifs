@@ -1,0 +1,40 @@
+<section class="pt4">
+  <article class="pb5">
+    <% latest = blog.articles.first %>
+    <div class="mw7 center code">
+      <img src="<%= latest.data.awslink %>">
+      <div class="pa3">
+        <h2 class="f5"><%= latest.title %></h2>
+        <%= latest.body %>
+      </div>
+    </div>
+
+    <div class="center mw7 ph3">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </article>
+
+  <article>
+    <div class="center mw7 ph3 bt bw2 b--black-10 pv4">
+      <h3 class="f6">The Alphabet</h3>
+      <%= partial "partials/alphabet" %>
+    </div>
+  </article>
+
+  <article class="center mw7 ph3 pt4 bt b--black-10">
+    <h3 class="f6">Latest Gifs</h3>
+    <ul class="list pl0 ml0">
+      <% blog.articles[1...51].each do |article| %>
+      <li class="pl0 mb4">
+        <a href="<%= article.url %>" title="><%= article.title %>" class="db link dim blue">
+          <span class="fw6 f4 db lh-title"><%= article.title %></span>
+          <date datetime="<%= article.date %>" class="f7 db lh-title">
+            <%= article.date.strftime('%d %B %Y') %>
+          </date>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+    <p class="dn"><a href="/archives/" title="Archives">All Gifs</a></p>
+  </article>
+</section>
