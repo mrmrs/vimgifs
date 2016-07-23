@@ -100,7 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 4.1)
-  middleman-blog
+  middleman-blog (~> 4.0)
 
 BUNDLED WITH
    1.11.2
