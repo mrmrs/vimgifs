@@ -13,6 +13,7 @@
     <meta name="author" content="mrmrs">
     <meta name="description" content="If you can watch gifs you can learn vim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag 'tachyons.min' %>
     <style>
       img { width: 100%; max-width: 100%; }
