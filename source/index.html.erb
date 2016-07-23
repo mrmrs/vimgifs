@@ -24,11 +24,11 @@
   <article class="center mw7 ph3 pt4 bt b--black-10">
     <h3 class="f6">Latest Gifs</h3>
     <ul class="list pl0 ml0">
-      <% blog.articles[1...25].each do |article| %>
+      <% blog.articles[1...51].each do |article| %>
       <li class="pl0 mb4">
         <a href="<%= article.url %>" title="><%= article.title %>" class="db link dim blue">
-          <span class="fw6 f4 db"><%= article.title %></span>
-          <date datetime="<%= article.date %>" class="f7 db">
+          <span class="fw6 f4 db lh-title"><%= article.title %></span>
+          <date datetime="<%= article.date %>" class="f7 db lh-title">
             <%= article.date.strftime('%d %B %Y') %>
           </date>
         </a>
