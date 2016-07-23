@@ -1,6 +1,8 @@
+<% if !links.nil? %>
 <section class="mt4">
   <h3 class="fw6 f5">Further Reading</h3>
   <% links.each do |link| %>
   <a href="<%= link.url %>" class="code db link dim blue">:h <%= link.title %></a>
   <% end %>
 </section>
+<% end %>
