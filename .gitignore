@@ -2,6 +2,5 @@ node_modules
 npm-debug.log
 .DS_STORE
 *.swp
-_site
 bundle
-.jekyll-metadata
+/build

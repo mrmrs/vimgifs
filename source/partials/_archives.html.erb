@@ -1,0 +1,15 @@
+<article class="pv4 bt b--black-10">
+  <div class="mw7 center ph3">
+    <h1 class="f4 mb4 fw4">More Gifs</h1>
+    <ul class="list mt1 pl0 ml0">
+      <% blog.articles[1...26].each do |article| %>
+      <li class="pl0 mb4 mr4 dib">
+        <a href="<%= article.url %>" title="<%= article.title %>" class="link db dim black-60">
+          <span class="f5 fw6 db lh-copy"><%= article.title %></span>
+          <date datetime="<%= article.date %>" class="f7 db"><%= article.date.strftime('%d %B %Y') %></date>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</article>
