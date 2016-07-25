@@ -82,6 +82,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.9.0)
     rack (1.6.4)
+    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -101,6 +102,7 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 4.1)
   middleman-blog (~> 4.0)
+  rake (~> 11.2)
 
 BUNDLED WITH
    1.11.2
