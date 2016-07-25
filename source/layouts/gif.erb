@@ -15,6 +15,8 @@
     <footer class="pv4 ph3 mw7 center gray" style="font-size:.75rem;">
       <a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </footer>
+
+    <%= partial "partials/related", locals: { related: current_page.data.related } %>
   </article>
   <%= partial "partials/archives" %>
 <% end %>
