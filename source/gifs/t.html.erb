@@ -4,8 +4,17 @@ author: mrmrs
 date: 2016-07-19
 awslink: https://d26aqo05ggejx9.cloudfront.net/t.gif
 further_reading:
-  - title: b
+  - title: t
     url: http://vimdoc.sourceforge.net/htmldoc/motion.html#t
-  - title: B
+  - title: T
     url: http://vimdoc.sourceforge.net/htmldoc/motion.html#T
 ---
+
+t{char}			Move to the character before (to the left) {char} on the current line.<br><br>
+T{char}			Move backwards to the character before (to the right) {char} on the current line.
+
+							*T*
+T{char}			Till after [count]'th occurrence of {char} to the
+			left.  The cursor is placed on the character right of
+			{char} |exclusive|.
+			{char} can be entered like with the |f| command.
