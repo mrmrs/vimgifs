@@ -1,14 +1,17 @@
+<% if !related.nil? %>
 <article class="pv4 bt b--black-10">
   <div class="mw7 center ph3">
     <h1 class="f4 mb4 fw4">Related Gifs</h1>
     <ul class="list mt1 pl0 ml0">
-      <% links.each do |link| %>
+      <% related.each do |related| %>
+        <% article = sitemap.find_resource_by_path("gifs/#{related}.html") %>
         <li class="pl0 mb4 mr4 dib">
-          <a href="<%= link.url %>" title="<%= link.title %>" class="link db dim black-60">
-            <span class="f5 fw6 db lh-copy"><%= link.title %></span>
+          <a href="<%= article.url %>" title="<%= article.title %>" class="link db dim black-60">
+            <span class="f5 fw6 db lh-copy"><%= article.title %></span>
           </a>
         </li>
       <% end %>
     </ul>
   </div>
 </article>
+<% end %>
