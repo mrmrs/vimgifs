@@ -17,6 +17,9 @@ activate :blog do |blog|
   blog.layout = 'gif'
   blog.default_extension = '.erb'
   blog.new_article_template = "#{Dir.pwd}/new_gif_template.erb"
+  blog.paginate = true
+  blog.page_link = "p{num}"
+  blog.per_page = 20
 end
 
 activate :directory_indexes
