@@ -4,7 +4,7 @@
     <div class="mw7 center code">
       <img src="<%= latest.data.awslink %>">
       <div class="pa3">
-        <h2 class="f5"><%= latest.title %></h2>
+        <h2 class="f5"><%= link_to latest.title, latest.url, class: "link dim blue" %></h2>
         <%= latest.body %>
       </div>
     </div>
