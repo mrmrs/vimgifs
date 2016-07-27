@@ -1,0 +1,29 @@
+<article class="center mw7 ph3 pv4">
+  <h3 class="f3">All Gifs</h3>
+  <ul class="list pl0 ml0">
+    <% page_articles.each do |article| %>
+    <li class="pl0 mb4">
+      <% link_to article.path, title: article.title, class: "db link dim blue" do %>
+        <span class="fw6 f4 db lh-title"><%= article.title %></span>
+        <date datetime="<%= article.date %>" class="f7 db lh-title">
+          <%= article.date.strftime('%d %B %Y') %>
+        </date>
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+
+  <%= link_to("Previous Page", prev_page.url, title: "Previous Page", class: "link db di-ns dim blue mr3 mb3" ) if !prev_page.nil? %>
+
+  <% (1..num_pages).each do |p| %>
+    <% if p != page_number %>
+      <% url = p != 1 ? "/all/p#{p}" : "/all" %>
+      <%= link_to p, url, class: "link dim blue mr3" %>
+    <% else %>
+      <span class="mr3"><%= p %></span>
+    <% end %>
+  <% end %>
+
+  <%= link_to("Next Page", next_page.url, title: "Next Page", class: "link db di-ns dim blue mt3" ) if !next_page.nil? %>
+  <p class="dn"><a href="/archives/" title="Archives">All Gifs</a></p>
+</article>
