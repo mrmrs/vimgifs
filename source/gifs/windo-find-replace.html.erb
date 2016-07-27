@@ -1,0 +1,26 @@
+---
+title: Find and replace on windows
+author: mrmrs
+date: 2016-07-27
+awslink: https://d26aqo05ggejx9.cloudfront.net/windo-find-replace.gif
+further_reading:
+  - title: ":windo"
+    url: http://vimdoc.sourceforge.net/htmldoc/windows.html#:windo
+  - title: ":bufdo"
+    url: http://vimdoc.sourceforge.net/htmldoc/windows.html#:bufdo
+  - title: ":tabdo"
+    url: http://vimdoc.sourceforge.net/htmldoc/tabpage.html#:tabdo
+  - title: ":argdo"
+    url: http://vimdoc.sourceforge.net/htmldoc/editing.html#:argdo
+---
+
+You can run a command on all windows in the current collection with :windo<br><br>
+
+To do a find and replace on the current set of windows do:<br>
+:windo %s/foo/bar<br>
+This will replace foo with bar in each file.<br><br>
+:windo %s/;$// <br>
+This will remove semicolons at the end of lines in javascript.<br><br>
+Alternatively (not pictured in the above gif) you can run a macro on each
+open by using :windo execute "normal @a" | update - to run macro @ and save after file change.
+
