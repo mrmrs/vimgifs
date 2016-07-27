@@ -86,3 +86,6 @@ You will notice a few special marks.  These include:
 		john		  0	    90	  39
 		steve		  392	  63	  334
 
+Insert Mode
+CTRL-U
+CTRL-W
