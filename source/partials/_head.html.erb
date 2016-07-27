@@ -14,7 +14,7 @@
     <meta name="description" content="If you can watch gifs you can learn vim">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag 'tachyons.min' %>
-    <%= auto_discovery_link_tag :atom, "/feed.xml" %>
+    <%= feed_tag :atom, "/feed.xml", title: "vimgifs Atom Feed" %>
     <style>
       img { width: 100%; max-width: 100%; }
       .f7 { font-size: 12px; }
