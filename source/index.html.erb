@@ -5,7 +5,10 @@
       <img src="<%= latest.data.awslink %>">
       <div class="pa3">
         <h2 class="f5"><%= link_to latest.title, latest.url, class: "link dim blue" %></h2>
-        <%= latest.body %>
+         <code class="lh-copy">
++          <%= latest.body %>
++        </code>
++        <%= partial "partials/further_reading", locals: { links: latest.data.further_reading } %>
       </div>
     </div>
 
