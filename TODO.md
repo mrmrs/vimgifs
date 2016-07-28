@@ -15,7 +15,8 @@ ZZ
 :help i_<Up>
 :help pattern<Ctrl-D>
 :help pattern<Tab>
-:helpgrep pattern
+:help grep pattern
+
 :cn - next match
 :cprev :cN - previous match
 :cfirst
@@ -89,3 +90,66 @@ You will notice a few special marks.  These include:
 Insert Mode
 CTRL-U
 CTRL-W
+
+
+
+
+das
+cas
+yas
+vas
+
+dis
+cis
+yis
+vis
+
+dip
+cip
+yip
+vip
+
+dap
+cap
+yap
+vap
+
+dab
+cab
+yab
+vab
+
+daB
+caB
+yaB
+vaB
+
+dib
+cib
+yib
+vib
+
+diB
+ciB
+yiB
+viB
+
+dt>
+dT<
+df>
+dF>
+
+CTRL-W CTRL-^					*CTRL-W_CTRL-^* *CTRL-W_^*
+CTRL-W c - close current window
+:hid[e]
+CTRL-W O - make it only window on screen
+CTRL-W T - go to top left window
+CTRL-W B - go to bottom right window
+CTRL-W r - rotate windows
+CTRL-W R - alternate direction
+CTRL-W _
+CTRL-W |
+CTRL-W ^	Does ":split #", split window in two and edit alternate file.
+
+		When a count is given, it becomes ":split #N", split window
+		and edit buffer N.
