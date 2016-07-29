@@ -8,7 +8,6 @@ if (!isUndefined(randomLinkEl)) {
     .then((res) => {return res.json()})
     .then(function (json) {
       var randomUrl = json[Math.floor(Math.random() * json.length)]
-      console.log(randomUrl)
       randomLinkEl.href = randomUrl
     })
 }
