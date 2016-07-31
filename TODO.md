@@ -150,6 +150,10 @@ CTRL-W R - alternate direction
 CTRL-W _
 CTRL-W |
 CTRL-W ^	Does ":split #", split window in two and edit alternate file.
+CTRL-W +
+CTRL-W >
+CTRL-W <
+
 
 		When a count is given, it becomes ":split #N", split window
 		and edit buffer N.
