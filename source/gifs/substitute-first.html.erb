@@ -1,0 +1,16 @@
+---
+title: Substitute first
+author: mrmrs
+date: 2016-08-04
+awslink: https://d26aqo05ggejx9.cloudfront.net/substitute-first.gif
+further_reading:
+  - title: ":s"
+    url: http://vimdoc.sourceforge.net/htmldoc/change.html#:s
+  - title: "/"
+    url: "http://vimdoc.sourceforge.net/htmldoc/pattern.html#/"
+---
+
+:%s/foo/fizz will replace the first instance of foo on each line with fizz.<br><br>
+:%s/foo/fizz/g will replace the all instances of foo with fizz.<br><br>
+:%s/foo/fizz/c will make you confirm each change. y for yes, n for no, a for yes too remaining.
+g and c can be combined if you want to match every foo and confirm each change - :%s/foo/fizz/gc
