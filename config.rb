@@ -23,3 +23,9 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? 'webpack --bail' : 'webpack --watch -d',
+  source: ".tmp",
+  latency: 1
