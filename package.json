@@ -1,0 +1,26 @@
+{
+  "name": "vimgifs",
+  "version": "1.0.0",
+  "description": "This is the code that powers vimgifs.com a collection of gifs to help you learn vim.",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmrs/vimgifs.git"
+  },
+  "author": "Sam Mason <sam.jbmason@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmrs/vimgifs/issues"
+  },
+  "homepage": "https://github.com/mrmrs/vimgifs#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "lodash": "^4.14.0",
+    "whatwg-fetch": "^1.0.0"
+  }
+}

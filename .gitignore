@@ -4,3 +4,4 @@ npm-debug.log
 *.swp
 bundle
 /build
+/.tmp
