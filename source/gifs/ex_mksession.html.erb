@@ -1,0 +1,19 @@
+---
+title: ":mksession"
+author: mrmrs
+date: 2016-08-05
+awslink: https://d26aqo05ggejx9.cloudfront.net/mksession.gif
+further_reading:
+  - title: ":mksession"
+    url: http://vimdoc.sourceforge.net/htmldoc/starting.html#:mksession
+  - title: ":source"
+    url: http://vimdoc.sourceforge.net/htmldoc/repeat.html#:source
+---
+
+:mks or :mksession can be used to save and then restore the current editing session. It will savey things like your tabs, views, splits, window layouts, global variables, and more. You can pass :mks a filename as an argument to save the session file to. By default it writes to Session.vim
+Next time you open vim you can resume the session by sourcing the Session.vim file with:<br>
+vim -S Session.vim<br>
+Alternatively if you already have a vim session going and want to switch to another one, load one in with<br>
+:source Session.vim
+
+

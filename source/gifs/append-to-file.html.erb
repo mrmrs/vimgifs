@@ -1,0 +1,15 @@
+---
+title: "Append file"
+author: mrmrs
+date: 2016-08-08
+awslink: https://d26aqo05ggejx9.cloudfront.net/append-to-file.gif
+further_reading:
+  - title: ":w_a"
+    url: http://vimdoc.sourceforge.net/htmldoc/editing.html#:w_a
+---
+
+To append the current file to a diffierent file, use the write ex command.<br>
+:w &gt;&gt; filename<br>
+The file you append to will become the <a href="http://vimgifs.com/alternate-file/">alternate file.</a><br>
+Alternatively you can append a range instead of the entire file. By default :w takes :1,$ as the range. You could append lines 5 through 42 to filename.txt with <br>:5,42w &gt;&gt; filename.txt
+
