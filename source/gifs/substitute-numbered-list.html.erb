@@ -1,0 +1,16 @@
+---
+title: Increment numbers with submatch
+author: mrmrs
+date: 2016-08-09
+awslink: https://d26aqo05ggejx9.cloudfront.net/submatch-number-increment.gif
+further_reading:
+  - title: ":s"
+    url: http://vimdoc.sourceforge.net/htmldoc/change.html#:s
+  - title: "submatch()"
+    url: http://vimdoc.sourceforge.net/htmldoc/eval.html#submatch()
+---
+
+
+:[range]s/\d\+/\=submatch(0) + 1/ will increment the first number in each line within the range.<br><br>
+:[range]s/\d\+$/\=submatch(0) + 1/ will increment a number if it is at the end of a line.
+
