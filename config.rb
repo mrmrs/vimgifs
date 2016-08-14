@@ -26,6 +26,6 @@ activate :directory_indexes
 
 activate :external_pipeline,
   name: :webpack,
-  command: build? ? 'webpack --bail' : 'webpack --watch -d',
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
   source: ".tmp",
   latency: 1
