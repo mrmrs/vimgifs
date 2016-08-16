@@ -1,0 +1,17 @@
+---
+title: ":vimgrep string filetype"
+author: mrmrs
+date: 2016-08-16
+awslink: https://d26aqo05ggejx9.cloudfront.net/vimgrep-string-filetype.gif
+further_reading:
+  - title: ":vimgrep"
+    url: http://vimdoc.sourceforge.net/htmldoc/quickfix.html#:vimgrep
+  - title: "quickfix"
+    url: http://vimdoc.sourceforge.net/htmldoc/quickfix.html#quickfix
+---
+
+You can use vimgrep to search for a strip within a filetype.<br>
+:vimgrep foo *.js - will search for foo in all js files within the current directory.<br>
+All matches will be loaded into a quickfix list that you can quickly cycle through.
+To move your cursor to the next match in the list use :cn. To move back use
+:cp. To open the list use :copen and to close the list use :cclose.
