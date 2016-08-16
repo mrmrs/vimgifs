@@ -1,0 +1,19 @@
+---
+title: :y
+author: mrmrs
+date: 2016-08-16
+awslink: https://d26aqo05ggejx9.cloudfront.net/ex-y.gif
+further_reading:
+  - title: ":y"
+    url: "http://vimdoc.sourceforge.net/htmldoc/change.html#:y"
+---
+
+:y will yank the current line regardless of your cursor position.<br>
+If you wish to paste the yanked line, press p or P.<br><br>
+
+:y also accepts a range.<br>
+:1,$y will yank the entire file as $ represents last line in the file.<br>
+:5,10y will yank lines 5 through 10.<br>
+:'<,'>y will yank from the beginning of the last selection, through the end of
+the last selection.
+
