@@ -7,7 +7,7 @@ if (!isUndefined(randomLinkEl)) {
   fetch('/gifs.json')
     .then((res) => {return res.json()})
     .then(function (json) {
-      var randomUrl = json[Math.floor(Math.random() * json.length)]
+      var randomUrl = json[Math.floor(Math.random() * json.length)].url
       randomLinkEl.href = randomUrl
     })
 }
