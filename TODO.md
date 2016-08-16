@@ -1,7 +1,6 @@
 vi filename - open file
 set showmode
 u ctrl-r
-using count
 ZZ
 :q! - discard changes
 :e! reloads the original version
@@ -1350,8 +1349,8 @@ tag	      command	      action ~
 :ex		:ex		same as ":edit"
 :execute	:exe[cute]	execute result of expressions
 :exit		:exi[t]		same as ":xit"
-:exusage	:exu[sage]	overview of Ex commands
-:file		:f[ile]		show or set the current file name
+[x] :exusage	:exu[sage]	overview of Ex commands
+[x] :file		:f[ile]		show or set the current file name
 :files	:files		list all files in the buffer list
 :filetype	:filet[ype]	switch file type detection on/off
 :find		:fin[d]		find file in 'path' and edit it
@@ -1367,7 +1366,7 @@ tag	      command	      action ~
 :for		:for		for loop
 :function	:fu[nction]	define a user function
 :global	:g[lobal]	execute commands for matching lines
-:goto		:go[to]		go to byte in the buffer
+[x] :goto		:go[to]		go to byte in the buffer
 :grep		:gr[ep]		run 'grepprg' and jump to first match
 :grepadd	:grepa[dd]	like :grep, but append to current list
 :gui		:gu[i]		start the GUI
@@ -1465,7 +1464,7 @@ tag	      command	      action ~
 :lvimgrep	:lv[imgrep]	search for pattern in files
 :lvimgrepadd	:lvimgrepa[dd]	like :vimgrep, but append to current list
 :lwindow	:lw[indow]	open or close location window
-:move		:m[ove]		move lines
+[x]:move		:m[ove]		move lines
 :mark		:ma[rk]		set a mark
 :macation	:maca[ction]	send action message
 :macmenu	:macm[enu]	set Mac specific properties for menu item
@@ -1555,14 +1554,14 @@ tag	      command	      action ~
 :quit		:q[uit]		quit current window (when one window quit Vim)
 :quitall	:quita[ll]	quit Vim
 :qall		:qa[ll]		quit Vim
-:read		:r[ead]		read file into the text
+[x] :read		:r[ead]		read file into the text
 :recover	:rec[over]	recover a file from a swap file
 :redo		:red[o]		redo one undone change
 :redir	:redi[r]	redirect messages to a file or register
 :redraw	:redr[aw]	force a redraw of the display
 :redrawstatus	:redraws[tatus]	force a redraw of the status line(s)
-:registers	:reg[isters]	display the contents of registers
-:resize	:res[ize]	change current window height
+[x] :registers	:reg[isters]	display the contents of registers
+:[x] resize	:res[ize]	change current window height
 :retab	:ret[ab]	change tab size
 :return	:retu[rn]	return from a user function
 :rewind	:rew[ind]	go to the first file in the argument list
@@ -1609,7 +1608,7 @@ tag	      command	      action ~
 :sfind	:sf[ind]	split current window and edit file in 'path'
 :sfirst	:sfir[st]	split window and go to first file in the
 				argument list
-:shell	:sh[ell]	escape to a shell
+[x] :shell	:sh[ell]	escape to a shell
 :simalt	:sim[alt]	Win32 GUI: simulate Windows ALT key
 :sign		:sig[n]		manipulate signs
 :silent	:sil[ent]	run a command silently
@@ -1639,7 +1638,7 @@ tag	      command	      action ~
 				argument list
 :srewind	:sre[wind]	split window and go to first file in the
 				argument list
-:stop		:st[op]		suspend the editor or escape to a shell
+[x] :stop		:st[op]		suspend the editor or escape to a shell
 :stag		:sta[g]		split window and jump to a tag
 :startinsert	:star[tinsert]	start Insert mode
 :startgreplace :startg[replace] start Virtual Replace mode
@@ -1740,7 +1739,7 @@ tag	      command	      action ~
 :wsverb	:ws[verb]	pass the verb to workshop over IPC
 :wundo	:wu[ndo]	write undo information to a file
 :wviminfo	:wv[iminfo]	write to viminfo file
-:xit		:x[it]		write if buffer changed and quit window or Vim
+[x] :xit		:x[it]		write if buffer changed and quit window or Vim
 :xall		:xa[ll]		same as ":wqall"
 :xmapclear	:xmapc[lear]	remove all mappings for Visual mode
 :xmap		:xm[ap]		like ":map" but for Visual mode
@@ -1749,7 +1748,7 @@ tag	      command	      action ~
 :xnoremenu	:xnoreme[nu]	like ":noremenu" but for Visual mode
 :xunmap	:xu[nmap]	like ":unmap" but for Visual mode
 :xunmenu	:xunme[nu]	remove menu for Visual mode
-:yank		:y[ank]		yank lines into a register
+[x] :yank		:y[ank]		yank lines into a register
 :z		z		print some lines
 :~		repeat last ":substitute"
 
